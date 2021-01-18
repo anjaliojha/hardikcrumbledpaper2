@@ -18,7 +18,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	ball = new Ball(50,345,70);
+	ball = new Ball(100,200,70);
 	World.add(world,ball);
 	
 	ground = new Ground(400,350,800,20);
@@ -44,16 +44,16 @@ function draw() {
 
   ball.display();
   ground.display();
- // dustbin1.display();
-  //dustbin2.display();
-  //dustbin3.display();
+ dustbin1.display();
+  dustbin2.display();
+  dustbin3.display();
   
   
  
 }                                                                                       
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball.body,ball.body.position,{x:20,y:-14});
+		Matter.Body.applyForce(ball.body,ball.body.position,{x:300,y:-145});
 	}
 }
 

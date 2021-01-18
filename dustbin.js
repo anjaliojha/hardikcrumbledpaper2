@@ -10,9 +10,9 @@ class Dustbin{
     this.y=y;
     this.width=width;
     this.height = height;
-    this.body=Bodies.rectangle(this.x,this.y,this.width,this.height,options);
+    this.body=Bodies.rectangle(this.x,this.y,width,height,options);
 
-    Image = 
+    //Image = 
     
     World.add(world,this.body);
     }
